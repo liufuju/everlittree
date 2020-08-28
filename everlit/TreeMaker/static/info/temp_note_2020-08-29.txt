@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">
+<en-note>
+    <div>
+        <span style="font-size: 12pt; font-weight: bold;">Author :</span>
+        <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">{{ author full name }}</span>
+    </div>
+    <div>
+        <span style="font-size: 12pt; font-weight: bold;">Citation :</span>
+        <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">{{ author string }}{{ year string }}{{ title string }}</span>
+        <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;; font-style: italic;">{{ journal title }}</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">, </span>
+        <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;; font-style: italic;">{{ journal volume }}</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">{{ journal issue }}{{ journal page }}</span>
+    </div>
+    <div><br/></div>
+    <div><span style="font-size: 18px; font-weight: bold;">摘要 | Abstract</span></div>
+    <hr/><div>{{ abstract }}<br/><br/></div>
+    <div><span style="font-size: 18px; font-weight: bold;">重点关注 | Key Points</span></div>
+    <hr/><div><br/><br/><br/><br/></div>
+    <div><span style="font-size: 18px; font-weight: bold;">引言 | Introduction</span></div>
+    <hr/><div><br/><br/><br/><br/></div>
+    <div><span style="font-size: 18px; font-weight: bold;">研究思路 | Insight</span></div>
+    <hr/><div><br/><br/><br/><br/></div>
+    <div><span style="font-size: 18px; font-weight: bold;">研究设计 | Design</span></div>
+    <hr/><div><br/><br/><br/><br/></div>
+    <div><span style="font-size: 18px; font-weight: bold;">研究结果 | Result</span></div>
+    <hr/><div><br/><br/><br/><br/></div>
+    <div><span style="font-size: 18px; font-weight: bold;">研究讨论 | Discussion</span></div>
+    <hr/><div><br/><br/><br/><br/></div>
+</en-note>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brancher</title>
+    <meta name="author" contert="Horace Liu">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+<p id="header">EverLitTree</p>
+<main>
+    <form id="form" action="info_file/" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div id="auth_region">
+            <h2>认证方式</h2>
+            <table>
+                <tr>
+                    <td class="label"><label for="login_method1">认证方式</label></td>
+                    <td><input id="login_method1" type="radio" name="login_method" value="password" disabled="True"/>账密登录
+                        <input id="login_method2" type="radio" name="login_method" value="Dev_token" checked/>Dev Token
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="user">用户名</label></td>
+                    <td><input id="user" type="text" name="user" size="35" value="" disabled="True"/></td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="password">密码</label></td>
+                    <td><input id="password" type="text" name="password" size="35" value="" disabled="True"/></td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="dev_token">Dev Token</label></td>
+                    <td><input id="dev_token" type="text" name="dev_token" size="35" value=""/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="files">
+            <h2>笔记模板文件</h2>
+            <table>
+                <tr>
+                    <td class="label"><label for="wos">Wos数据文件</label></td>
+                    <td><input id="wos" type="file" name="wos"/></td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="temp_note">笔记模板文件</label></td>
+                    <td><input id="temp_note" type="file" name="temp_note"/></td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="temp_cate">目录模板文件</label></td>
+                    <td><input id="temp_cate" type="file" name="temp_cate"/></td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="temp_single_cate">目录条目模板文件</label></td>
+                    <td><input id="temp_single_cate" type="file" name="temp_single_cate"/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div id="confirmation">
+            <button id="info_file" type="submit" value="confirmation">确认认证信息及文件</button>
+        </div>
+
+    </form>
+
+    <div id="function_buttons">
+        <form id="create_note" enctype="multipart/form-data">
+            {% csrf_token %}
+            <button type="submit" value="CreateNote" formmethod="post" formaction="create_note_cate/">创建笔记&目录</button>
+        </form>
+    </div>
+
+
+    <div id="result">
+        <p>{{ result }}<a href="{% url 'treemaker' %}">{{ hint }}</a></p>
+    </div>
+
+</main>
+</body>
+</html>

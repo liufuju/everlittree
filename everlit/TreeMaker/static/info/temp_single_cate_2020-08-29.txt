@@ -1,0 +1,1 @@
+<div><en-todo checked="false"/>[summary] | <a href="{{ note link }}" style="color: rgb(26, 144, 185);">{{ note title }}</a></div>

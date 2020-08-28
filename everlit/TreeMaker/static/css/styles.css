@@ -1,0 +1,104 @@
+main {
+    width:70%;
+    margin:0 auto;
+}
+
+#header {
+    margin: 0 auto;
+    border: none;
+    padding: 20px 20px 20px 30px;
+    text-align: left;
+    background-color: #131824;
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+h2 {
+    color: #131824;
+    display: block;
+    text-align:center;
+    padding: 0px 20px 0px 20px;
+}
+
+#auth_region, #files {
+    margin: 30px auto;
+    border: 3px #131824 solid;
+    padding: 10px 20px 35px 20px;
+    border-radius: 10px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+
+table tr td {
+    margin: 5px auto;
+    padding: 5px 5px 5px 5px;
+}
+
+#info_file {
+    margin: 5px 10px 20px 10px;
+    display: inline-flex;
+}
+
+#user, #password, #dev_token {
+    column-span: 2;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: #131824 2px solid;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+input[type='file'] {
+    margin: 2px 2px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: black;
+    padding: 12px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.label {
+    text-align: right;
+}
+
+form, #function_buttons {
+    text-align: center;
+}
+
+#confirmation, #create_note_cate {
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+button {
+    margin: 15px 10px 10px 10px;
+    background-color: #131824;
+    border: #131824 solid;
+    border-radius: 10px;
+    color: white;
+    padding: 12px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: aliceblue;
+    color: #131824;
+}
+
+#result {
+    margin: 0 auto;
+    font-size: 24px;
+    border: none;
+    color: #131824;
+    text-align: center;
+}
